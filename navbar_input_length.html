@@ -1,0 +1,52 @@
+<!-- This is a fix to variable input length problem in Bootstrap 4 Navbar. A width must be set on navbar-form class and then use col-xs-12 class 
+for the input-group.-->
+<html>
+<head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<style>
+@media(min-width:767px){
+#navbar-form {
+width: 45% !important;//give a width according to your need
+}
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-toggleable-md navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+    <form class="navbar-form navbar-left form-horizontal">
+      <div class="col-xs-12 input-group"><!--class must be col-xs-12-->
+        <input type="text" class="search-bar form-control" placeholder="Discover from here!">
+        <div class="input-group-btn">
+          <button class="search-btn btn btn-default" type="submit">
+            <i class="search-icon glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Link1<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link3</a>
+        </li>
+        <button class="ask-btn btn btn-danger navbar-btn">Button1</button>
+        <li class="login-btn"><a href="#"><span class="glyphicon glyphicon-log-in"></span>Button2</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
