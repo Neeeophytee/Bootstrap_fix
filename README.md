@@ -29,11 +29,10 @@ Bootstrap_fix/bootstrap_component/your_file_name.html
 
 Once you have completed at least one successful fix submission, you can submit another pull request to add your name in the CONTRIBUTING.md file.
 
-###### Format of CONTRIBUTING.md
+### Format of CONTRIBUTING.md
 
-`
 - Shilpa Mitra ([@Neeeophytee](https://github.com/Neeeophytee))
-`
+
 
 # Licensing
 
